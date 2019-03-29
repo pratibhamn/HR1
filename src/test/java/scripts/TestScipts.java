@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.BasePage;
@@ -38,6 +39,7 @@ public class TestScipts extends BaseTest {
 		p.clickPimMenu();
 		p.clickEmpListMenu();
 		GenericUtils.sortListBox(driver.findElement(By.xpath("//select[@id='empsearch_job_title']")));
+		Reporter.log("Hello",true);
 		
 	}
 
